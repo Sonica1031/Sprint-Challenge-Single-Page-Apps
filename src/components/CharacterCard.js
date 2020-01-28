@@ -8,8 +8,6 @@ export default function CharacterCard(props) {
       <p> {props.species}</p>
       <p> {props.type} </p>
       <p> {props.gender} </p>
-      <p> {props.origin} </p>
-      <p> {props.location} </p>
       <img src={props.src} alt="Character image" />
     </div>
   )
