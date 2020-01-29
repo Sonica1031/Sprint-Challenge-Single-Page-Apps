@@ -4,6 +4,7 @@ import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
 import {Route, Link} from 'react-router-dom';
 import WelcomePage from './components/WelcomePage';
+import SearchForm from './components/SearchForm';
 
 export default function App() {
   return (
@@ -11,9 +12,9 @@ export default function App() {
     <main>
       <Header />
       <Button variant="dark"><Link to="/">Welcome</Link></Button>
-      <Button variant="dark"><Link to="/Character-List">Character List</Link></Button>
+      <Button variant="dark"><Link to="/Character-List/">Character List</Link></Button>
       <Route exact path="/" component={WelcomePage} />
-      <Route exact path="/Character-List" component={CharacterList}/>
+      <Route exact path="/Character-List/" component={CharacterList}/>
     </main>
     </div>
   );
